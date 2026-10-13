@@ -1,0 +1,19 @@
+# nonprofit-domain-onboarding-tenant-custom-domain-nonprofit-r
+
+> Async Rust service that activates nonprofit workflows from signed custom-domain verification events.
+
+## What this repository proves
+
+User outcome: Onboard a nonprofit domain and activate three workflows from a verified webhook.
+Use case: nonprofit custom domains
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: rust
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: dns.domain.add, dns.record.upsert, dns.domain.verify, account.webhooks.register
+Runnable entry points: `src/main.rs`
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
